@@ -1,0 +1,407 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C50816E25CD0F6900BB936E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */; };
+		9CA4191225CD08D800A288B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4191125CD08D800A288B1 /* AppDelegate.swift */; };
+		9CA4191425CD08D800A288B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4191325CD08D800A288B1 /* ViewController.swift */; };
+		9CA4191625CD08DA00A288B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4191525CD08DA00A288B1 /* Assets.xcassets */; };
+		9CA4191925CD08DA00A288B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */; };
+		F655869FCF1F50B1D2EFC854 /* Pods_timesheetapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
+		9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CA4190E25CD08D800A288B1 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA4191125CD08D800A288B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CA4191325CD08D800A288B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CA4191525CD08DA00A288B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9CA4191A25CD08DA00A288B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.debug.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.debug.xcconfig"; sourceTree = "<group>"; };
+		D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timesheetapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CA4190B25CD08D800A288B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F655869FCF1F50B1D2EFC854 /* Pods_timesheetapp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		342B197C1A91753A01FF6BD5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4FA37AD52B1826E533AF1E78 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */,
+				5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CA4190525CD08D800A288B1 = {
+			isa = PBXGroup;
+			children = (
+				9CA4191025CD08D800A288B1 /* timesheetapp */,
+				9CA4190F25CD08D800A288B1 /* Products */,
+				4FA37AD52B1826E533AF1E78 /* Pods */,
+				342B197C1A91753A01FF6BD5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9CA4190F25CD08D800A288B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CA4190E25CD08D800A288B1 /* timesheetapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CA4191025CD08D800A288B1 /* timesheetapp */ = {
+			isa = PBXGroup;
+			children = (
+				9CA4191125CD08D800A288B1 /* AppDelegate.swift */,
+				9CA4191325CD08D800A288B1 /* ViewController.swift */,
+				9CA4191525CD08DA00A288B1 /* Assets.xcassets */,
+				9CA4191A25CD08DA00A288B1 /* Info.plist */,
+				9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */,
+				9CA4191725CD08DA00A288B1 /* Preview Content */,
+			);
+			path = timesheetapp;
+			sourceTree = "<group>";
+		};
+		9CA4191725CD08DA00A288B1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CA4190D25CD08D800A288B1 /* timesheetapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CA4191D25CD08DA00A288B1 /* Build configuration list for PBXNativeTarget "timesheetapp" */;
+			buildPhases = (
+				5F6658D73FD1E75ACE7F9868 /* [CP] Check Pods Manifest.lock */,
+				9CA4190A25CD08D800A288B1 /* Sources */,
+				9CA4190B25CD08D800A288B1 /* Frameworks */,
+				9CA4190C25CD08D800A288B1 /* Resources */,
+				E248B3D91E36DA7CD7EF1940 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = timesheetapp;
+			productName = timesheetapp;
+			productReference = 9CA4190E25CD08D800A288B1 /* timesheetapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CA4190625CD08D800A288B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					9CA4190D25CD08D800A288B1 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 9CA4190925CD08D800A288B1 /* Build configuration list for PBXProject "timesheetapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CA4190525CD08D800A288B1;
+			productRefGroup = 9CA4190F25CD08D800A288B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CA4190D25CD08D800A288B1 /* timesheetapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CA4190C25CD08D800A288B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA4191925CD08DA00A288B1 /* Preview Assets.xcassets in Resources */,
+				9CA4191625CD08DA00A288B1 /* Assets.xcassets in Resources */,
+				9C50816E25CD0F6900BB936E /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F6658D73FD1E75ACE7F9868 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-timesheetapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E248B3D91E36DA7CD7EF1940 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-timesheetapp/Pods-timesheetapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-timesheetapp/Pods-timesheetapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-timesheetapp/Pods-timesheetapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CA4190A25CD08D800A288B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CA4191425CD08D800A288B1 /* ViewController.swift in Sources */,
+				9CA4191225CD08D800A288B1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9CA4191B25CD08DA00A288B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9CA4191C25CD08DA00A288B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CA4191E25CD08DA00A288B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"timesheetapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UWTY6S3ZC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = timesheetapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tikalestari.timesheetapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CA4191F25CD08DA00A288B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"timesheetapp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7UWTY6S3ZC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = timesheetapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tikalestari.timesheetapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CA4190925CD08D800A288B1 /* Build configuration list for PBXProject "timesheetapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA4191B25CD08DA00A288B1 /* Debug */,
+				9CA4191C25CD08DA00A288B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CA4191D25CD08DA00A288B1 /* Build configuration list for PBXNativeTarget "timesheetapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CA4191E25CD08DA00A288B1 /* Debug */,
+				9CA4191F25CD08DA00A288B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9CA4190625CD08D800A288B1 /* Project object */;
+}
