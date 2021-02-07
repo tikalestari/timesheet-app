@@ -7,141 +7,133 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C50816E25CD0F6900BB936E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */; };
-		9C7B24D325CF5C990003C6A1 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7B24D225CF5C990003C6A1 /* Utilities.swift */; };
-		9CA4191225CD08D800A288B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4191125CD08D800A288B1 /* AppDelegate.swift */; };
-		9CA4191425CD08D800A288B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4191325CD08D800A288B1 /* ViewController.swift */; };
-		9CA4191625CD08DA00A288B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4191525CD08DA00A288B1 /* Assets.xcassets */; };
-		9CA4191925CD08DA00A288B1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */; };
-		9CE7AD8925CF11ED005117B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7AD8825CF11ED005117B2 /* SignUpViewController.swift */; };
-		9CE7AD8C25CF1200005117B2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7AD8B25CF1200005117B2 /* LogInViewController.swift */; };
-		9CE7AD8F25CF1210005117B2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7AD8E25CF1210005117B2 /* HomeViewController.swift */; };
-		9CE7AD9625CF127E005117B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7AD9525CF127E005117B2 /* SceneDelegate.swift */; };
-		9CE7AD9C25CF1358005117B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE7AD9B25CF1358005117B2 /* Main.storyboard */; };
-		F655869FCF1F50B1D2EFC854 /* Pods_timesheetapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */; };
+		9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BEBC225D0A0C100B5011D /* Utilities.swift */; };
+		9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */; };
+		9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */; };
+		9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BED125D08CAB00892DA3 /* ViewController.swift */; };
+		9CE3BED525D08CAB00892DA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BED325D08CAB00892DA3 /* Main.storyboard */; };
+		9CE3BED725D08CAE00892DA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BED625D08CAE00892DA3 /* Assets.xcassets */; };
+		9CE3BEDA25D08CAE00892DA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BED825D08CAE00892DA3 /* LaunchScreen.storyboard */; };
+		9CE3BEE425D08E3100892DA3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CE3BEE325D08E3100892DA3 /* GoogleService-Info.plist */; };
+		9CE3BF0125D0901300892DA3 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BF0025D0901300892DA3 /* SignUpViewController.swift */; };
+		9CE3BF0425D0902C00892DA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BF0325D0902C00892DA3 /* LoginViewController.swift */; };
+		9CE3BF0725D0903800892DA3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BF0625D0903800892DA3 /* HomeViewController.swift */; };
+		D4D0835DFC8D32998F8E5C73 /* Pods_timesheetapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE601415BC78447AEE502F80 /* Pods_timesheetapp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
-		9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		9C7B24D225CF5C990003C6A1 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		9CA4190E25CD08D800A288B1 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA4191125CD08D800A288B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA4191325CD08D800A288B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CA4191525CD08DA00A288B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9CA4191A25CD08DA00A288B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9CE7AD8825CF11ED005117B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		9CE7AD8B25CF1200005117B2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
-		9CE7AD8E25CF1210005117B2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		9CE7AD9525CF127E005117B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9CE7AD9B25CF1358005117B2 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.debug.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.debug.xcconfig"; sourceTree = "<group>"; };
-		D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timesheetapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
+		9C9BEBC225D0A0C100B5011D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		9CE3BED125D08CAB00892DA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9CE3BED425D08CAB00892DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CE3BED625D08CAE00892DA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CE3BED925D08CAE00892DA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CE3BEDB25D08CAE00892DA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CE3BEE325D08E3100892DA3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9CE3BF0025D0901300892DA3 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		9CE3BF0325D0902C00892DA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9CE3BF0625D0903800892DA3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B5BE4BBF23E3406ED9D2FE24 /* Pods-timesheetapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.debug.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.debug.xcconfig"; sourceTree = "<group>"; };
+		DE601415BC78447AEE502F80 /* Pods_timesheetapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_timesheetapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9CA4190B25CD08D800A288B1 /* Frameworks */ = {
+		9CE3BEC725D08CAB00892DA3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F655869FCF1F50B1D2EFC854 /* Pods_timesheetapp.framework in Frameworks */,
+				D4D0835DFC8D32998F8E5C73 /* Pods_timesheetapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		342B197C1A91753A01FF6BD5 /* Frameworks */ = {
+		66FB8C5DB4C873A66A8DA876 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D4A27452BC9995A9DC9A90D1 /* Pods_timesheetapp.framework */,
+				DE601415BC78447AEE502F80 /* Pods_timesheetapp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4FA37AD52B1826E533AF1E78 /* Pods */ = {
+		9C9BEBC525D0A0C400B5011D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */,
-				5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		9C7B24D125CF5C810003C6A1 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				9C7B24D225CF5C990003C6A1 /* Utilities.swift */,
+				9C9BEBC225D0A0C100B5011D /* Utilities.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		9CA4190525CD08D800A288B1 = {
+		9CE3BEC125D08CAB00892DA3 = {
 			isa = PBXGroup;
 			children = (
-				9CA4191025CD08D800A288B1 /* timesheetapp */,
-				9CA4190F25CD08D800A288B1 /* Products */,
-				4FA37AD52B1826E533AF1E78 /* Pods */,
-				342B197C1A91753A01FF6BD5 /* Frameworks */,
+				9CE3BECC25D08CAB00892DA3 /* timesheetapp */,
+				9CE3BECB25D08CAB00892DA3 /* Products */,
+				E4E83391E428D082A8130472 /* Pods */,
+				66FB8C5DB4C873A66A8DA876 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		9CA4190F25CD08D800A288B1 /* Products */ = {
+		9CE3BECB25D08CAB00892DA3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CA4190E25CD08D800A288B1 /* timesheetapp.app */,
+				9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CA4191025CD08D800A288B1 /* timesheetapp */ = {
+		9CE3BECC25D08CAB00892DA3 /* timesheetapp */ = {
 			isa = PBXGroup;
 			children = (
-				9CA4191125CD08D800A288B1 /* AppDelegate.swift */,
-				9CE7AD9525CF127E005117B2 /* SceneDelegate.swift */,
-				9C7B24D125CF5C810003C6A1 /* Helpers */,
-				9CE7AD9125CF121F005117B2 /* ViewControllers */,
-				9CE7AD9B25CF1358005117B2 /* Main.storyboard */,
-				9CA4191525CD08DA00A288B1 /* Assets.xcassets */,
-				9CA4191A25CD08DA00A288B1 /* Info.plist */,
-				9C50816D25CD0F6900BB936E /* GoogleService-Info.plist */,
-				9CA4191725CD08DA00A288B1 /* Preview Content */,
+				9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */,
+				9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */,
+				9C9BEBC525D0A0C400B5011D /* Helpers */,
+				9CE3BF0925D0903B00892DA3 /* ViewControllers */,
+				9CE3BED325D08CAB00892DA3 /* Main.storyboard */,
+				9CE3BED625D08CAE00892DA3 /* Assets.xcassets */,
+				9CE3BED825D08CAE00892DA3 /* LaunchScreen.storyboard */,
+				9CE3BEE325D08E3100892DA3 /* GoogleService-Info.plist */,
+				9CE3BEDB25D08CAE00892DA3 /* Info.plist */,
 			);
 			path = timesheetapp;
 			sourceTree = "<group>";
 		};
-		9CA4191725CD08DA00A288B1 /* Preview Content */ = {
+		9CE3BF0925D0903B00892DA3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				9CA4191825CD08DA00A288B1 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9CE7AD9125CF121F005117B2 /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				9CA4191325CD08D800A288B1 /* ViewController.swift */,
-				9CE7AD8825CF11ED005117B2 /* SignUpViewController.swift */,
-				9CE7AD8B25CF1200005117B2 /* LogInViewController.swift */,
-				9CE7AD8E25CF1210005117B2 /* HomeViewController.swift */,
+				9CE3BED125D08CAB00892DA3 /* ViewController.swift */,
+				9CE3BF0025D0901300892DA3 /* SignUpViewController.swift */,
+				9CE3BF0325D0902C00892DA3 /* LoginViewController.swift */,
+				9CE3BF0625D0903800892DA3 /* HomeViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E4E83391E428D082A8130472 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5BE4BBF23E3406ED9D2FE24 /* Pods-timesheetapp.debug.xcconfig */,
+				7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CA4190D25CD08D800A288B1 /* timesheetapp */ = {
+		9CE3BEC925D08CAB00892DA3 /* timesheetapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CA4191D25CD08DA00A288B1 /* Build configuration list for PBXNativeTarget "timesheetapp" */;
+			buildConfigurationList = 9CE3BEDE25D08CAE00892DA3 /* Build configuration list for PBXNativeTarget "timesheetapp" */;
 			buildPhases = (
-				5F6658D73FD1E75ACE7F9868 /* [CP] Check Pods Manifest.lock */,
-				9CA4190A25CD08D800A288B1 /* Sources */,
-				9CA4190B25CD08D800A288B1 /* Frameworks */,
-				9CA4190C25CD08D800A288B1 /* Resources */,
-				E248B3D91E36DA7CD7EF1940 /* [CP] Embed Pods Frameworks */,
+				228B1CA4C0F9543BBC4B9F84 /* [CP] Check Pods Manifest.lock */,
+				9CE3BEC625D08CAB00892DA3 /* Sources */,
+				9CE3BEC725D08CAB00892DA3 /* Frameworks */,
+				9CE3BEC825D08CAB00892DA3 /* Resources */,
+				CF0FCEC2CC7DB3A159E6C13A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,24 +141,24 @@
 			);
 			name = timesheetapp;
 			productName = timesheetapp;
-			productReference = 9CA4190E25CD08D800A288B1 /* timesheetapp.app */;
+			productReference = 9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9CA4190625CD08D800A288B1 /* Project object */ = {
+		9CE3BEC225D08CAB00892DA3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					9CA4190D25CD08D800A288B1 = {
+					9CE3BEC925D08CAB00892DA3 = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
 			};
-			buildConfigurationList = 9CA4190925CD08D800A288B1 /* Build configuration list for PBXProject "timesheetapp" */;
+			buildConfigurationList = 9CE3BEC525D08CAB00892DA3 /* Build configuration list for PBXProject "timesheetapp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -174,32 +166,32 @@
 				en,
 				Base,
 			);
-			mainGroup = 9CA4190525CD08D800A288B1;
-			productRefGroup = 9CA4190F25CD08D800A288B1 /* Products */;
+			mainGroup = 9CE3BEC125D08CAB00892DA3;
+			productRefGroup = 9CE3BECB25D08CAB00892DA3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CA4190D25CD08D800A288B1 /* timesheetapp */,
+				9CE3BEC925D08CAB00892DA3 /* timesheetapp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9CA4190C25CD08D800A288B1 /* Resources */ = {
+		9CE3BEC825D08CAB00892DA3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA4191925CD08DA00A288B1 /* Preview Assets.xcassets in Resources */,
-				9CA4191625CD08DA00A288B1 /* Assets.xcassets in Resources */,
-				9C50816E25CD0F6900BB936E /* GoogleService-Info.plist in Resources */,
-				9CE7AD9C25CF1358005117B2 /* Main.storyboard in Resources */,
+				9CE3BEDA25D08CAE00892DA3 /* LaunchScreen.storyboard in Resources */,
+				9CE3BEE425D08E3100892DA3 /* GoogleService-Info.plist in Resources */,
+				9CE3BED725D08CAE00892DA3 /* Assets.xcassets in Resources */,
+				9CE3BED525D08CAB00892DA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5F6658D73FD1E75ACE7F9868 /* [CP] Check Pods Manifest.lock */ = {
+		228B1CA4C0F9543BBC4B9F84 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -221,7 +213,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E248B3D91E36DA7CD7EF1940 /* [CP] Embed Pods Frameworks */ = {
+		CF0FCEC2CC7DB3A159E6C13A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -241,24 +233,43 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9CA4190A25CD08D800A288B1 /* Sources */ = {
+		9CE3BEC625D08CAB00892DA3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CE7AD8F25CF1210005117B2 /* HomeViewController.swift in Sources */,
-				9CE7AD8C25CF1200005117B2 /* LogInViewController.swift in Sources */,
-				9C7B24D325CF5C990003C6A1 /* Utilities.swift in Sources */,
-				9CE7AD8925CF11ED005117B2 /* SignUpViewController.swift in Sources */,
-				9CA4191425CD08D800A288B1 /* ViewController.swift in Sources */,
-				9CA4191225CD08D800A288B1 /* AppDelegate.swift in Sources */,
-				9CE7AD9625CF127E005117B2 /* SceneDelegate.swift in Sources */,
+				9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */,
+				9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */,
+				9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */,
+				9CE3BF0125D0901300892DA3 /* SignUpViewController.swift in Sources */,
+				9CE3BF0425D0902C00892DA3 /* LoginViewController.swift in Sources */,
+				9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */,
+				9CE3BF0725D0903800892DA3 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		9CE3BED325D08CAB00892DA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE3BED425D08CAB00892DA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9CE3BED825D08CAE00892DA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CE3BED925D08CAE00892DA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
-		9CA4191B25CD08DA00A288B1 /* Debug */ = {
+		9CE3BEDC25D08CAE00892DA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,7 +330,7 @@
 			};
 			name = Debug;
 		};
-		9CA4191C25CD08DA00A288B1 /* Release */ = {
+		9CE3BEDD25D08CAE00892DA3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -374,18 +385,15 @@
 			};
 			name = Release;
 		};
-		9CA4191E25CD08DA00A288B1 /* Debug */ = {
+		9CE3BEDF25D08CAE00892DA3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC5106923EFC0F1E846E1A25 /* Pods-timesheetapp.debug.xcconfig */;
+			baseConfigurationReference = B5BE4BBF23E3406ED9D2FE24 /* Pods-timesheetapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"timesheetapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UWTY6S3ZC;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = timesheetapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -397,18 +405,15 @@
 			};
 			name = Debug;
 		};
-		9CA4191F25CD08DA00A288B1 /* Release */ = {
+		9CE3BEE025D08CAE00892DA3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5A0248B6AEF86C50D70DC390 /* Pods-timesheetapp.release.xcconfig */;
+			baseConfigurationReference = 7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"timesheetapp/Preview Content\"";
 				DEVELOPMENT_TEAM = 7UWTY6S3ZC;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = timesheetapp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,25 +428,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CA4190925CD08D800A288B1 /* Build configuration list for PBXProject "timesheetapp" */ = {
+		9CE3BEC525D08CAB00892DA3 /* Build configuration list for PBXProject "timesheetapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA4191B25CD08DA00A288B1 /* Debug */,
-				9CA4191C25CD08DA00A288B1 /* Release */,
+				9CE3BEDC25D08CAE00892DA3 /* Debug */,
+				9CE3BEDD25D08CAE00892DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CA4191D25CD08DA00A288B1 /* Build configuration list for PBXNativeTarget "timesheetapp" */ = {
+		9CE3BEDE25D08CAE00892DA3 /* Build configuration list for PBXNativeTarget "timesheetapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9CA4191E25CD08DA00A288B1 /* Debug */,
-				9CA4191F25CD08DA00A288B1 /* Release */,
+				9CE3BEDF25D08CAE00892DA3 /* Debug */,
+				9CE3BEE025D08CAE00892DA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9CA4190625CD08D800A288B1 /* Project object */;
+	rootObject = 9CE3BEC225D08CAB00892DA3 /* Project object */;
 }

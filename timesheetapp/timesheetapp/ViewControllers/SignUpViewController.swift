@@ -2,7 +2,7 @@
 //  SignUpViewController.swift
 //  timesheetapp
 //
-//  Created by Tika Lestari on 2/6/21.
+//  Created by Tika Lestari on 2/7/21.
 //
 
 import UIKit
@@ -10,7 +10,6 @@ import UIKit
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var firstNameTextField: UITextField!
-    
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -25,17 +24,16 @@ class SignUpViewController: UIViewController {
     
     func setUpElements() {
         
-        // Hide error label
+        // Hide the error label
         errorLabel.alpha = 0
         
         // Style the elements
         Utilities.styleTextField(firstNameTextField)
+        Utilities.styleTextField(lastNameTextField)
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
-        Utilities.styleTextField(firstNameTextField)
         Utilities.styleFilledButton(signUpButton)
     }
-    
 
     /*
     // MARK: - Navigation
@@ -46,9 +44,7 @@ class SignUpViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
     @IBAction func signUpTapped(_ sender: Any) {
     }
-    
     
 }

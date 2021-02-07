@@ -1,38 +1,38 @@
 //
-//  LogInViewController.swift
+//  LoginViewController.swift
 //  timesheetapp
 //
-//  Created by Tika Lestari on 2/6/21.
+//  Created by Tika Lestari on 2/7/21.
 //
 
 import UIKit
 
-class LogInViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var errorLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
         setUpElements()
     }
     
     func setUpElements() {
         
-        // Hide error label
+        // Hide the error label
         errorLabel.alpha = 0
         
         // Style the elements
         Utilities.styleTextField(emailTextField)
         Utilities.styleTextField(passwordTextField)
         Utilities.styleFilledButton(loginButton)
+        
+        
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -42,7 +42,6 @@ class LogInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
     @IBAction func loginTapped(_ sender: Any) {
     }
     

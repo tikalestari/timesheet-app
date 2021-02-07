@@ -6,7 +6,6 @@ target 'timesheetapp' do
   use_frameworks!
 
   # Pods for timesheetapp
-  
   pod 'Firebase/Core'
   pod 'Firebase/Database'
 
