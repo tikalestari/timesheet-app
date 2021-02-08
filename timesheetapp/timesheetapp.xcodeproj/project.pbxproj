@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BEBC225D0A0C100B5011D /* Utilities.swift */; };
+		9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F3B1225D0EEE900E57CD0 /* Constants.swift */; };
 		9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */; };
 		9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */; };
 		9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BED125D08CAB00892DA3 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
 		9C9BEBC225D0A0C100B5011D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		9C9F3B1225D0EEE900E57CD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				9C9BEBC225D0A0C100B5011D /* Utilities.swift */,
+				9C9F3B1225D0EEE900E57CD0 /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				9CE3BF0425D0902C00892DA3 /* LoginViewController.swift in Sources */,
 				9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */,
 				9CE3BF0725D0903800892DA3 /* HomeViewController.swift in Sources */,
+				9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
