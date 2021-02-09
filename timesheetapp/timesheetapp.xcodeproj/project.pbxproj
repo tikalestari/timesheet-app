@@ -71,6 +71,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		9C9F3B6925D241B900E57CD0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9CE3BED325D08CAB00892DA3 /* Main.storyboard */,
+				9CE3BED825D08CAE00892DA3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		9CE3BEC125D08CAB00892DA3 = {
 			isa = PBXGroup;
 			children = (
@@ -94,11 +103,10 @@
 			children = (
 				9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */,
 				9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */,
+				9C9F3B6925D241B900E57CD0 /* Storyboards */,
 				9C9BEBC525D0A0C400B5011D /* Helpers */,
 				9CE3BF0925D0903B00892DA3 /* ViewControllers */,
-				9CE3BED325D08CAB00892DA3 /* Main.storyboard */,
 				9CE3BED625D08CAE00892DA3 /* Assets.xcassets */,
-				9CE3BED825D08CAE00892DA3 /* LaunchScreen.storyboard */,
 				9CE3BEE325D08E3100892DA3 /* GoogleService-Info.plist */,
 				9CE3BEDB25D08CAE00892DA3 /* Info.plist */,
 			);

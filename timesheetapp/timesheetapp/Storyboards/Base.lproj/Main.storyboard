@@ -133,16 +133,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opk-R9-9R5">
-                                <rect key="frame" x="165" y="438" width="86" height="22"/>
+                                <rect key="frame" x="164" y="96" width="86" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g4r-ba-pDr">
+                                <rect key="frame" x="40" y="752" width="334" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XxJ-JS-QD1">
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="vId-Tb-6CB"/>
+                                        </constraints>
+                                        <state key="normal" title="Clock In"/>
+                                        <connections>
+                                            <action selector="clockInTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="uhn-8H-zYL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nif-zw-EjZ">
+                                        <rect key="frame" x="172" y="0.0" width="162" height="30"/>
+                                        <state key="normal" title="Clock Out"/>
+                                        <connections>
+                                            <action selector="clockOutTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="48t-7j-zcv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Nif-zw-EjZ" firstAttribute="width" secondItem="XxJ-JS-QD1" secondAttribute="width" id="CrS-DT-N3u"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cA-Nm-g81"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2cA-Nm-g81" firstAttribute="trailing" secondItem="g4r-ba-pDr" secondAttribute="trailing" constant="40" id="txl-pw-VWe"/>
+                            <constraint firstItem="2cA-Nm-g81" firstAttribute="bottom" secondItem="g4r-ba-pDr" secondAttribute="bottom" constant="80" id="vEn-5A-7Bh"/>
+                            <constraint firstItem="g4r-ba-pDr" firstAttribute="leading" secondItem="2cA-Nm-g81" secondAttribute="leading" constant="40" id="wkV-or-eTl"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clockInButton" destination="XxJ-JS-QD1" id="xrP-3i-Fep"/>
+                        <outlet property="clockOutButton" destination="Nif-zw-EjZ" id="2jI-w2-gAm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXp-cn-yxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
