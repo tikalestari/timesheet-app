@@ -6,17 +6,27 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import FirebaseAuth
 
 class HomeViewController: UIViewController {
 
     @IBOutlet weak var clockInButton: UIButton!
     @IBOutlet weak var clockOutButton: UIButton!
+    var db: Firestore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setUpElements()
+        
+        // [START setup]
+        let settings = FirestoreSettings()
+
+        Firestore.firestore().settings = settings
+        // [END setup]
+        db = Firestore.firestore()
     }
     
     func setUpElements() {
@@ -32,11 +42,45 @@ class HomeViewController: UIViewController {
     }
     
     @IBAction func clockInTapped(_ sender: Any) {
-        // TODO: enter clock-in time in db
+        let user = getCurrentUser()
+        let currentDateTime = Utilities.getDateTime()
+        var ref: DocumentReference? = nil
+        ref = db.collection("hoursLogged").addDocument(data: [
+            "uid": user!.uid,
+            "clockIn": currentDateTime
+        ]) { err in
+            if let err = err {
+                print("Error adding clockIn log entry: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
     }
     
     @IBAction func clockOutTapped(_ sender: Any) {
-        // TODO: enter clock-out time in db
+        let user = getCurrentUser()
+        let currentDateTime = Utilities.getDateTime()
+        var ref: DocumentReference? = nil
+        ref = db.collection("hoursLogged").addDocument(data: [
+            "uid": user!.uid,
+            "clockOut": currentDateTime
+        ]) { err in
+            if let err = err {
+                print("Error adding clockOut log entry: \(err)")
+            } else {
+                print("Document added with ID: \(ref!.documentID)")
+            }
+        }
     }
     
+    private func getCurrentUser() -> User? {
+        let user = Auth.auth().currentUser
+        if (user != nil) {
+            return user!
+        } else {
+            print("User not logged in")
+            // TODO: alert or warning here
+            return nil
+        }
+    }
 }
