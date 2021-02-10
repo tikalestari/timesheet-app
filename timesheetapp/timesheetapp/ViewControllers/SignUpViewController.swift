@@ -100,8 +100,14 @@ class SignUpViewController: UIViewController {
                     
                     // User created successfully, store first and last name
                     let db = Firestore.firestore()
+                    let currentDateTime = Utilities.getDateTime(Date())
                     
-                    db.collection("users").addDocument(data: ["firstName": firstName, "lastName": lastName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: [
+                        "uid": result!.user.uid,
+                        "firstName": firstName,
+                        "lastName": lastName,
+                        "createdAt": currentDateTime,
+                        "lastModified": currentDateTime]) { (error) in
                         if error != nil {
                             self.showError("Failed to add user to database.")
                         }

@@ -56,10 +56,21 @@ class Utilities {
         return emailTest.evaluate(with: email)
     }
     
-    static func getDateTime() -> String {
-        let date = Date()
+    static func getDateTime(_ date: Date) -> String {
         let df = DateFormatter()
         df.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return df.string(from: date)
+    }
+    
+    static func getDate(_ date: Date) -> String {
+        let df = DateFormatter()
+        df.dateFormat = "EEEE, MMM d"
+        return df.string(from: date)
+    }
+    
+    static func getTime(_ date: Date) -> String {
+        let df = DateFormatter()
+        df.dateFormat = "h:mm a"
+        return df.string(from:date)
     }
 }
