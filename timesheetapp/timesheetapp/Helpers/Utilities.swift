@@ -62,6 +62,16 @@ class Utilities {
         return df.string(from: date)
     }
     
+    static func getISODateFromDate(_ date: Date) -> String {
+        let df = ISO8601DateFormatter()
+        return df.string(from: date)
+    }
+    
+    static func getISODateFromString(_ isoDate: String) -> Date {
+        let df = ISO8601DateFormatter()
+        return df.date(from:isoDate)!
+    }
+    
     static func getDate(_ date: Date) -> String {
         let df = DateFormatter()
         df.dateFormat = "EEEE, MMM d"

@@ -148,7 +148,7 @@
                                         </constraints>
                                         <state key="normal" title="Clock In"/>
                                         <connections>
-                                            <action selector="clockInTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="uhn-8H-zYL"/>
+                                            <action selector="clockInTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="D9g-CU-Qzg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nif-zw-EjZ">

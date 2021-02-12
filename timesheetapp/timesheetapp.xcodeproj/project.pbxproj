@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C83F67D25D64F8D005E7B7A /* HoursLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83F67C25D64F8D005E7B7A /* HoursLog.swift */; };
 		9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BEBC225D0A0C100B5011D /* Utilities.swift */; };
 		9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F3B1225D0EEE900E57CD0 /* Constants.swift */; };
 		9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
+		9C83F67C25D64F8D005E7B7A /* HoursLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursLog.swift; sourceTree = "<group>"; };
 		9C9BEBC225D0A0C100B5011D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9C9F3B1225D0EEE900E57CD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,14 @@
 				DE601415BC78447AEE502F80 /* Pods_timesheetapp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9C83F67B25D64F20005E7B7A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9C83F67C25D64F8D005E7B7A /* HoursLog.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		9C9BEBC525D0A0C400B5011D /* Helpers */ = {
@@ -103,6 +113,7 @@
 			children = (
 				9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */,
 				9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */,
+				9C83F67B25D64F20005E7B7A /* Models */,
 				9C9F3B6925D241B900E57CD0 /* Storyboards */,
 				9C9BEBC525D0A0C400B5011D /* Helpers */,
 				9CE3BF0925D0903B00892DA3 /* ViewControllers */,
@@ -251,6 +262,7 @@
 				9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */,
 				9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */,
 				9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */,
+				9C83F67D25D64F8D005E7B7A /* HoursLog.swift in Sources */,
 				9CE3BF0125D0901300892DA3 /* SignUpViewController.swift in Sources */,
 				9CE3BF0425D0902C00892DA3 /* LoginViewController.swift in Sources */,
 				9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */,
