@@ -10,7 +10,7 @@ import FirebaseFirestore
 import FirebaseAuth
 import FirebaseFirestoreSwift
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UIPopoverControllerDelegate, TaskDelegate {
 
     @IBOutlet weak var clockInButton: UIButton!
     @IBOutlet weak var clockOutButton: UIButton!
@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var editButton: UIButton!
     
     var db: Firestore!
+    
+    let editHoursPopoverSegueIdentifier = "EditHoursPopoverSegue"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -113,8 +115,19 @@ class HomeViewController: UIViewController {
         }
     }
     
-    @IBAction func editButtonTapped(_ sender: Any) {
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == editHoursPopoverSegueIdentifier, let controller = segue.destination as? EditHoursViewController {
+            controller.delegate = self
+            controller.preferredContentSize = CGSize(width: 350, height: 700)
+            
+            // Make sure popover behaves according to AlwaysPresentAsPopover class
+            let presentationController = AlwaysPresentAsPopover.configurePresentation(forController: controller)
+            
+            // Puts the popover in the middle
+            presentationController.sourceRect = CGRect(x: view.center.x, y: view.center.y, width: 0, height: 0)
+            presentationController.sourceView = view
+            presentationController.permittedArrowDirections = UIPopoverArrowDirection(rawValue: 0)
+        }
     }
     
     private func displayTotalHours(_ user: User) {
@@ -140,12 +153,16 @@ class HomeViewController: UIViewController {
         let interval = Int(interval)
         let minutes = (interval / 60) % 60
         let hours = (interval / 3600)
-        let output = String(format: "%02d hours and %02d minutes", hours, minutes)
-        totalHoursWorkedLabel.text = "You've worked " + output + " today."
+//        let output = String(format: "%02d hours and %02d minutes", hours, minutes)
+        if minutes == 0 {
+            totalHoursWorkedLabel.text = "You've worked " + hours.description + " hours today."
+        } else {
+            totalHoursWorkedLabel.text = "You've worked " + hours.description + " hours and " + minutes.description + " minutes today."
+        }
         totalHoursWorkedLabel.alpha = 1
     }
     
-    func editWorkHours(_ clockIn: Date, _ clockOut: Date) {
+    func updateHours(_ clockIn: Date, _ clockOut: Date) {
         let user = getCurrentUser()
         let userUid = user!.uid
         db.collection("hoursLogged").document(userUid).setData([
@@ -159,5 +176,13 @@ class HomeViewController: UIViewController {
                 print("Document successfully written for uid \(userUid)")
             }
         }
+        clockInTimeLabel.text = "Clocked in at " + Utilities.getTime(clockIn)
+        clockOutTimeLabel.text = "Clocked out at " + Utilities.getTime(clockOut)
+        clockInTimeLabel.alpha = 1
+        clockOutTimeLabel.alpha = 1
+        clockInButton.alpha = 0
+        clockOutButton.alpha = 0
+        let totalSecondsWorked = clockOut.timeIntervalSince(clockIn)
+        self.displayTotalHours(totalSecondsWorked)
     }
 }

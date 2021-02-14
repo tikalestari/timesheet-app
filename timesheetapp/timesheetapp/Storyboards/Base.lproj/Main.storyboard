@@ -187,8 +187,7 @@
                                 <rect key="frame" x="344" y="64" width="30" height="30"/>
                                 <state key="normal" title="Edit"/>
                                 <connections>
-                                    <action selector="editButtonTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="lyu-95-RdL"/>
-                                    <segue destination="GVc-yD-Up9" kind="popoverPresentation" popoverAnchorView="bQW-Qk-n8b" id="158-t3-nPc">
+                                    <segue destination="GVc-yD-Up9" kind="popoverPresentation" identifier="EditHoursPopoverSegue" popoverAnchorView="bQW-Qk-n8b" id="158-t3-nPc">
                                         <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                     </segue>
                                 </connections>
