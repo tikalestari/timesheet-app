@@ -153,9 +153,10 @@ class HomeViewController: UIViewController, UIPopoverControllerDelegate, TaskDel
         let interval = Int(interval)
         let minutes = (interval / 60) % 60
         let hours = (interval / 3600)
-//        let output = String(format: "%02d hours and %02d minutes", hours, minutes)
-        if minutes == 0 {
+        if minutes == 0 && hours >= 0 {
             totalHoursWorkedLabel.text = "You've worked " + hours.description + " hours today."
+        } else if minutes > 0 && hours == 0 {
+            totalHoursWorkedLabel.text = "You've worked " + minutes.description + " minutes today."
         } else {
             totalHoursWorkedLabel.text = "You've worked " + hours.description + " hours and " + minutes.description + " minutes today."
         }
