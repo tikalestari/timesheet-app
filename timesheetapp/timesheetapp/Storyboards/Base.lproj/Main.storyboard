@@ -132,7 +132,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opk-R9-9R5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opk-R9-9R5">
                                 <rect key="frame" x="50" y="94" width="314" height="21.5"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <nil key="textColor"/>
@@ -183,6 +183,16 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQW-Qk-n8b">
+                                <rect key="frame" x="344" y="64" width="30" height="30"/>
+                                <state key="normal" title="Edit"/>
+                                <connections>
+                                    <action selector="editButtonTapped:" destination="acl-3a-WQ4" eventType="touchUpInside" id="lyu-95-RdL"/>
+                                    <segue destination="GVc-yD-Up9" kind="popoverPresentation" popoverAnchorView="bQW-Qk-n8b" id="158-t3-nPc">
+                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                    </segue>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2cA-Nm-g81"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -190,10 +200,12 @@
                             <constraint firstItem="YKZ-Sd-aKa" firstAttribute="leading" secondItem="2cA-Nm-g81" secondAttribute="leading" constant="100" id="3FI-di-sT0"/>
                             <constraint firstItem="2cA-Nm-g81" firstAttribute="trailing" secondItem="opk-R9-9R5" secondAttribute="trailing" constant="50" id="3Op-Iz-Xlo"/>
                             <constraint firstItem="2cA-Nm-g81" firstAttribute="bottom" secondItem="g4r-ba-pDr" secondAttribute="bottom" constant="100" id="6vG-YU-ZY7"/>
+                            <constraint firstItem="2cA-Nm-g81" firstAttribute="trailing" secondItem="bQW-Qk-n8b" secondAttribute="trailing" constant="40" id="FCS-bx-wgt"/>
                             <constraint firstItem="2cA-Nm-g81" firstAttribute="trailing" secondItem="g4r-ba-pDr" secondAttribute="trailing" constant="100" id="T9r-T9-FCs"/>
                             <constraint firstItem="g4r-ba-pDr" firstAttribute="top" secondItem="YKZ-Sd-aKa" secondAttribute="bottom" constant="322" id="YIg-M8-56Q"/>
                             <constraint firstItem="opk-R9-9R5" firstAttribute="top" secondItem="2cA-Nm-g81" secondAttribute="top" constant="50" id="Zhk-M4-JCl"/>
                             <constraint firstItem="g4r-ba-pDr" firstAttribute="leading" secondItem="2cA-Nm-g81" secondAttribute="leading" constant="100" id="cJw-gD-3bO"/>
+                            <constraint firstItem="bQW-Qk-n8b" firstAttribute="top" secondItem="2cA-Nm-g81" secondAttribute="top" constant="20" id="eqY-iP-xwJ"/>
                             <constraint firstItem="opk-R9-9R5" firstAttribute="leading" secondItem="2cA-Nm-g81" secondAttribute="leading" constant="50" id="suK-O9-2K4"/>
                             <constraint firstItem="2cA-Nm-g81" firstAttribute="trailing" secondItem="YKZ-Sd-aKa" secondAttribute="trailing" constant="100" id="xZN-lW-wax"/>
                         </constraints>
@@ -203,6 +215,7 @@
                         <outlet property="clockInTimeLabel" destination="dzv-4f-0sZ" id="ydv-mE-Ffg"/>
                         <outlet property="clockOutButton" destination="Nif-zw-EjZ" id="2jI-w2-gAm"/>
                         <outlet property="clockOutTimeLabel" destination="eeK-v5-Hq5" id="j3R-t5-LDD"/>
+                        <outlet property="editButton" destination="bQW-Qk-n8b" id="Hhj-8Z-rwU"/>
                         <outlet property="totalHoursWorkedLabel" destination="bg0-Jl-zpb" id="gL4-e8-sjs"/>
                         <outlet property="welcomeLabel" destination="opk-R9-9R5" id="BbG-AJ-PUx"/>
                     </connections>
@@ -210,6 +223,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DXp-cn-yxk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2275" y="49"/>
+        </scene>
+        <!--Edit Hours View Controller-->
+        <scene sceneID="kdy-hQ-5NX">
+            <objects>
+                <viewController id="GVc-yD-Up9" customClass="EditHoursViewController" customModule="timesheetapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iu9-IU-MtX">
+                        <rect key="frame" x="0.0" y="0.0" width="350" height="646"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="LTu-ry-iZo">
+                                <rect key="frame" x="0.0" y="86" width="350" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1G-To-3yN">
+                                <rect key="frame" x="144" y="50" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fB-93-QXY">
+                                <rect key="frame" x="158" y="586" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveButtonTapped:" destination="GVc-yD-Up9" eventType="touchUpInside" id="Ohz-hR-5m7"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="GEs-dJ-Hu0">
+                                <rect key="frame" x="0.0" y="358" width="350" height="216"/>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clock Out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRl-yI-nM8">
+                                <rect key="frame" x="137" y="322" width="76" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ufr-2d-ld5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7fB-93-QXY" firstAttribute="leading" secondItem="ufr-2d-ld5" secondAttribute="leading" constant="158" id="3fy-7B-pEh"/>
+                            <constraint firstItem="GEs-dJ-Hu0" firstAttribute="trailing" secondItem="ufr-2d-ld5" secondAttribute="trailing" id="C9g-Qf-O34"/>
+                            <constraint firstItem="ufr-2d-ld5" firstAttribute="trailing" secondItem="HRl-yI-nM8" secondAttribute="trailing" constant="137" id="FBh-a0-yN6"/>
+                            <constraint firstItem="HRl-yI-nM8" firstAttribute="top" secondItem="LTu-ry-iZo" secondAttribute="bottom" constant="20" id="Ikz-Cl-40E"/>
+                            <constraint firstItem="LTu-ry-iZo" firstAttribute="leading" secondItem="ufr-2d-ld5" secondAttribute="leading" id="J85-Md-NCJ"/>
+                            <constraint firstItem="ufr-2d-ld5" firstAttribute="bottom" secondItem="7fB-93-QXY" secondAttribute="bottom" constant="30" id="NDn-v8-Xpb"/>
+                            <constraint firstItem="HRl-yI-nM8" firstAttribute="leading" secondItem="ufr-2d-ld5" secondAttribute="leading" constant="137" id="SMo-cL-Yd1"/>
+                            <constraint firstItem="U1G-To-3yN" firstAttribute="leading" secondItem="ufr-2d-ld5" secondAttribute="leading" constant="144" id="T3T-hA-0rR"/>
+                            <constraint firstItem="LTu-ry-iZo" firstAttribute="top" secondItem="U1G-To-3yN" secondAttribute="bottom" constant="15" id="VOK-Gt-39f"/>
+                            <constraint firstItem="LTu-ry-iZo" firstAttribute="trailing" secondItem="ufr-2d-ld5" secondAttribute="trailing" id="XXN-nd-xgl"/>
+                            <constraint firstItem="GEs-dJ-Hu0" firstAttribute="top" secondItem="HRl-yI-nM8" secondAttribute="bottom" constant="15" id="jNX-H0-XSs"/>
+                            <constraint firstItem="GEs-dJ-Hu0" firstAttribute="leading" secondItem="ufr-2d-ld5" secondAttribute="leading" id="klP-XL-ACM"/>
+                            <constraint firstItem="ufr-2d-ld5" firstAttribute="trailing" secondItem="7fB-93-QXY" secondAttribute="trailing" constant="158" id="pd6-2H-2hn"/>
+                            <constraint firstItem="ufr-2d-ld5" firstAttribute="trailing" secondItem="U1G-To-3yN" secondAttribute="trailing" constant="144" id="yOL-IG-nV7"/>
+                            <constraint firstItem="U1G-To-3yN" firstAttribute="top" secondItem="ufr-2d-ld5" secondAttribute="top" constant="50" id="zmq-Du-kV4"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="350" height="700"/>
+                    <connections>
+                        <outlet property="clockInTime" destination="LTu-ry-iZo" id="KHz-8G-bLa"/>
+                        <outlet property="clockOutTime" destination="GEs-dJ-Hu0" id="AXv-9i-Qsq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8w2-hA-ZUb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3100.0000000000005" y="-50.223214285714285"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="TDR-OP-LlZ">

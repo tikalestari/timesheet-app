@@ -18,6 +18,7 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var clockOutTimeLabel: UILabel!
     @IBOutlet weak var totalHoursWorkedLabel: UILabel!
     @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var editButton: UIButton!
     
     var db: Firestore!
     
@@ -112,6 +113,10 @@ class HomeViewController: UIViewController {
         }
     }
     
+    @IBAction func editButtonTapped(_ sender: Any) {
+        
+    }
+    
     private func displayTotalHours(_ user: User) {
 
         // Get clockIn and clockOut data from firestore
@@ -138,5 +143,21 @@ class HomeViewController: UIViewController {
         let output = String(format: "%02d hours and %02d minutes", hours, minutes)
         totalHoursWorkedLabel.text = "You've worked " + output + " today."
         totalHoursWorkedLabel.alpha = 1
+    }
+    
+    func editWorkHours(_ clockIn: Date, _ clockOut: Date) {
+        let user = getCurrentUser()
+        let userUid = user!.uid
+        db.collection("hoursLogged").document(userUid).setData([
+            "uid": userUid,
+            "clockIn": Utilities.getISODateFromDate(clockIn),
+            "clockOut": Utilities.getISODateFromDate(clockOut)
+        ], merge: true) { err in
+            if let err = err {
+                print("Error writing document for uid \(userUid): \(err)")
+            } else {
+                print("Document successfully written for uid \(userUid)")
+            }
+        }
     }
 }

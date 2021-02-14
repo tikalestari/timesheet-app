@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C83F67D25D64F8D005E7B7A /* HoursLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83F67C25D64F8D005E7B7A /* HoursLog.swift */; };
+		9C83F68125D8D89D005E7B7A /* EditHoursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83F68025D8D89D005E7B7A /* EditHoursViewController.swift */; };
 		9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BEBC225D0A0C100B5011D /* Utilities.swift */; };
 		9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F3B1225D0EEE900E57CD0 /* Constants.swift */; };
 		9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		7BE816AC6068A683598AAD06 /* Pods-timesheetapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-timesheetapp.release.xcconfig"; path = "Target Support Files/Pods-timesheetapp/Pods-timesheetapp.release.xcconfig"; sourceTree = "<group>"; };
 		9C83F67C25D64F8D005E7B7A /* HoursLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursLog.swift; sourceTree = "<group>"; };
+		9C83F68025D8D89D005E7B7A /* EditHoursViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditHoursViewController.swift; sourceTree = "<group>"; };
 		9C9BEBC225D0A0C100B5011D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9C9F3B1225D0EEE900E57CD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				9CE3BF0025D0901300892DA3 /* SignUpViewController.swift */,
 				9CE3BF0325D0902C00892DA3 /* LoginViewController.swift */,
 				9CE3BF0625D0903800892DA3 /* HomeViewController.swift */,
+				9C83F68025D8D89D005E7B7A /* EditHoursViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */,
 				9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */,
+				9C83F68125D8D89D005E7B7A /* EditHoursViewController.swift in Sources */,
 				9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */,
 				9C83F67D25D64F8D005E7B7A /* HoursLog.swift in Sources */,
 				9CE3BF0125D0901300892DA3 /* SignUpViewController.swift in Sources */,

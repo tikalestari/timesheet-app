@@ -95,6 +95,7 @@ class SignUpViewController: UIViewController {
                     
                     // There was an error creating the user
                     self.showError("Error creating user")
+                    print("Error creating user: \(err?.localizedDescription ?? "")")
                     
                 } else {
                     
