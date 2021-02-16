@@ -151,7 +151,7 @@ class HomeViewController: UIViewController, UIPopoverControllerDelegate, TaskDel
     }
     private func displayTotalHours(_ interval: TimeInterval) {
         let interval = Int(interval)
-        let minutes = (interval / 60) % 60
+        let minutes = ((interval / 60) % 60) + 1
         let hours = (interval / 3600)
         if minutes == 0 && hours >= 0 {
             totalHoursWorkedLabel.text = "You've worked " + hours.description + " hours today."
