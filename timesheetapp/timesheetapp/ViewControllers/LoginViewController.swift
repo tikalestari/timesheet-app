@@ -52,11 +52,40 @@ class LoginViewController: UIViewController {
                 self.errorLabel.text = error!.localizedDescription
                 self.errorLabel.alpha = 1
             } else {
-                let homeViewController = self.storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
-                self.view.window?.rootViewController = homeViewController
-                self.view.window?.makeKeyAndVisible()
+                self.transitionToHome()
             }
         }
+    }
+    
+    func transitionToHome() {
+        let tabBarVC = UITabBarController()
+        
+//        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+//
+//        let summaryViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.summaryViewController) as? SummaryViewController
+//
+        let vc1 = UINavigationController(rootViewController: HomeViewController())
+        let vc2 = UINavigationController(rootViewController: SummaryViewController())
+        
+        vc1.title = "Home"
+        vc2.title = "Summary"
+        
+        tabBarVC.setViewControllers([vc1, vc2], animated: false)
+        
+        guard let items = tabBarVC.tabBar.items else {
+            return
+        }
+        
+        let images = ["house", "star"]
+        
+        for x in 0..<items.count {
+            items[x].image = UIImage(systemName: images[x])
+        }
+        
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true)
+//        view.window?.rootViewController = homeViewController
+//        view.window?.makeKeyAndVisible()
     }
     
     func validateFields() -> String? {
