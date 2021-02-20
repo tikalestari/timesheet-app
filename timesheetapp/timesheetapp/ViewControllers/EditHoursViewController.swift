@@ -27,4 +27,8 @@ class EditHoursViewController: UIViewController {
         delegate?.updateHours(clockInTime.date, clockOutTime.date)
         dismiss(animated: true, completion: nil)
     }
+    
+    @IBAction func cancelButtonTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
 }
