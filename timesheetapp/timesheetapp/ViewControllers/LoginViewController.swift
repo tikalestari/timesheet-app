@@ -60,12 +60,11 @@ class LoginViewController: UIViewController {
     func transitionToHome() {
         let tabBarVC = UITabBarController()
         
-//        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
-//
-//        let summaryViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.summaryViewController) as? SummaryViewController
-//
-        let vc1 = UINavigationController(rootViewController: HomeViewController())
-        let vc2 = UINavigationController(rootViewController: SummaryViewController())
+        let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
+        let summaryViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.summaryViewController) as? SummaryViewController
+        
+        let vc1 = UINavigationController(rootViewController: homeViewController!)
+        let vc2 = UINavigationController(rootViewController: summaryViewController!)
         
         vc1.title = "Home"
         vc2.title = "Summary"
@@ -84,8 +83,6 @@ class LoginViewController: UIViewController {
         
         tabBarVC.modalPresentationStyle = .fullScreen
         present(tabBarVC, animated: true)
-//        view.window?.rootViewController = homeViewController
-//        view.window?.makeKeyAndVisible()
     }
     
     func validateFields() -> String? {
