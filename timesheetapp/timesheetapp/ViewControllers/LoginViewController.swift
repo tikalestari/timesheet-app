@@ -63,8 +63,8 @@ class LoginViewController: UIViewController {
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
         let summaryViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.summaryViewController) as? SummaryViewController
         
-        let vc1 = UINavigationController(rootViewController: homeViewController!)
-        let vc2 = UINavigationController(rootViewController: summaryViewController!)
+        let vc1 = homeViewController!
+        let vc2 = summaryViewController!
         
         vc1.title = "Home"
         vc2.title = "Summary"
