@@ -13,6 +13,7 @@
 		9C83F6BC25DD5EFE005E7B7A /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C83F6BB25DD5EFE005E7B7A /* SummaryViewController.swift */; };
 		9C9BEBC325D0A0C100B5011D /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9BEBC225D0A0C100B5011D /* Utilities.swift */; };
 		9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9F3B1225D0EEE900E57CD0 /* Constants.swift */; };
+		9CA6BA2E25E3703500A3FDF4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA6BA2D25E3703500A3FDF4 /* SettingsViewController.swift */; };
 		9CE3BECE25D08CAB00892DA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */; };
 		9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */; };
 		9CE3BED225D08CAB00892DA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE3BED125D08CAB00892DA3 /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 		9C83F6BB25DD5EFE005E7B7A /* SummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
 		9C9BEBC225D0A0C100B5011D /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		9C9F3B1225D0EEE900E57CD0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CA6BA2D25E3703500A3FDF4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9CE3BECA25D08CAB00892DA3 /* timesheetapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timesheetapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE3BECD25D08CAB00892DA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE3BECF25D08CAB00892DA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				9CE3BF0625D0903800892DA3 /* HomeViewController.swift */,
 				9C83F68025D8D89D005E7B7A /* EditHoursViewController.swift */,
 				9C83F6BB25DD5EFE005E7B7A /* SummaryViewController.swift */,
+				9CA6BA2D25E3703500A3FDF4 /* SettingsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 				9CE3BF0425D0902C00892DA3 /* LoginViewController.swift in Sources */,
 				9CE3BED025D08CAB00892DA3 /* SceneDelegate.swift in Sources */,
 				9CE3BF0725D0903800892DA3 /* HomeViewController.swift in Sources */,
+				9CA6BA2E25E3703500A3FDF4 /* SettingsViewController.swift in Sources */,
 				9C9F3B1325D0EEE900E57CD0 /* Constants.swift in Sources */,
 				9C83F6BC25DD5EFE005E7B7A /* SummaryViewController.swift in Sources */,
 			);

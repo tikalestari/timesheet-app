@@ -62,20 +62,23 @@ class LoginViewController: UIViewController {
         
         let homeViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.homeViewController) as? HomeViewController
         let summaryViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.summaryViewController) as? SummaryViewController
+        let settingsViewController = storyboard?.instantiateViewController(withIdentifier: Constants.Storyboard.settingsViewController) as? SettingsViewController
         
-        let vc1 = homeViewController!
-        let vc2 = summaryViewController!
+        let vc1 = summaryViewController!
+        let vc2 = homeViewController!
+        let vc3 = settingsViewController!
         
-        vc1.title = "Home"
-        vc2.title = "Summary"
+        vc1.title = "Summary"
+        vc2.title = "Home"
+        vc3.title = "Settings"
         
-        tabBarVC.setViewControllers([vc1, vc2], animated: false)
+        tabBarVC.setViewControllers([vc1, vc2, vc3], animated: false)
         
         guard let items = tabBarVC.tabBar.items else {
             return
         }
         
-        let images = ["house", "star"]
+        let images = ["star", "house", "ellipsis"]
         
         for x in 0..<items.count {
             items[x].image = UIImage(systemName: images[x])
